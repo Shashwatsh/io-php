@@ -50,8 +50,8 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
         $directory = new Directory($this->tempDir);
         $iterator = $directory->getIterator();
         $this->assertInstanceOf('RecursiveDirectoryIterator', $iterator);
-        $expected = ['file.txt', 'file.html', 'file.csv'];
-        $actual = [];
+        $expected = array('file.txt', 'file.html', 'file.csv');
+        $actual = array();
         foreach ($iterator as $item) {
             if ($item->isFile()) {
                 $actual[] = $item->getFilename();
@@ -75,7 +75,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     public function listFiles()
     {
         $directory = new Directory($this->tempDir);
-        $expected = ['file.txt', 'file.html', 'file.csv'];
+        $expected = array('file.txt', 'file.html', 'file.csv');
         $actual = $directory->listFiles();
         sort($expected);
         sort($actual);
@@ -94,8 +94,8 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     public function listFilesWithIncludedExtensions()
     {
         $directory = new Directory($this->tempDir);
-        $expected = ['file.txt', 'file.csv'];
-        $actual = $directory->listFiles(['txt', 'csv']);
+        $expected = array('file.txt', 'file.csv');
+        $actual = $directory->listFiles(array('txt', 'csv'));
         sort($expected);
         sort($actual);
         $this->assertSame($expected, $actual);
@@ -113,8 +113,8 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     public function listFilesWithExcludedExtensions()
     {
         $directory = new Directory($this->tempDir);
-        $expected = ['file.txt', 'file.html'];
-        $actual = $directory->listFiles([], ['csv']);
+        $expected = array('file.txt', 'file.html');
+        $actual = $directory->listFiles(array(), array('csv'));
         sort($expected);
         sort($actual);
         $this->assertSame($expected, $actual);
@@ -132,7 +132,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     public function listFilesWithLimit()
     {
         $directory = new Directory($this->tempDir);
-        $actual = $directory->listFiles([], [], 2);
+        $actual = $directory->listFiles(array(), array(), 2);
         $this->assertSame(2, count($actual));
     }
 

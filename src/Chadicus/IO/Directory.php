@@ -33,12 +33,12 @@ class Directory extends \Directory implements \IteratorAggregate
      * @return array
      */
     final public function listFiles(
-        array $includedExtensions = [],
-        array $excludedExtensions = [],
+        array $includedExtensions = array(),
+        array $excludedExtensions = array(),
         $limit = PHP_INT_MAX
     ) {
         $this->rewind();
-        $files = [];
+        $files = array();
         $count = 0;
         for ($file = $this->read(); $file !== false && $count < $limit; $file = $this->read()) {
             if (filetype("{$this->path}/{$file}") !== 'file') {
