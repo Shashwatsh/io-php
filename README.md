@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/chadicus/io-php.png)](https://travis-ci.org/chadicus/io-php)
 
 
-A collection of utility classes to work with PHP Exceptions
+A collection of classes to work with file systems
 
 ## Requirements
 
