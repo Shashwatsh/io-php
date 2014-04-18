@@ -6,11 +6,11 @@ A collection of classes to work with file systems
 
 ## Requirements
 
-Primaids requires PHP 5.3 (or later).
+Chadicus\IO requires PHP 5.3 (or later).
 
 ##Composer
 To add the library as a local, per-project dependency use [Composer](http://getcomposer.org)! Simply add a dependency on
-`chadicus/primaids` to your project's `composer.json` file such as:
+`chadicus/io` to your project's `composer.json` file such as:
 
 ```json
 {
