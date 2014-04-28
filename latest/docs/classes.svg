@@ -53,85 +53,85 @@
 <path fill="none" stroke="gray" d="M287,-180C287,-174 293,-168 299,-168"/>
 <text text-anchor="middle" x="328" y="-228.1" font-family="Times Roman,serif" font-size="11.00" fill="gray">IO</text>
 </g>
-<!-- \\Chadicus\\FileInfo\\NullFilter -->
-<g id="node4" class="node"><title>\\Chadicus\\FileInfo\\NullFilter</title>
-<polygon fill="none" stroke="black" points="359,-564 297,-564 297,-528 359,-528 359,-564"/>
-<text text-anchor="middle" x="328" y="-543.1" font-family="Times Roman,serif" font-size="11.00">NullFilter</text>
-</g>
-<!-- \\Chadicus\\FileInfo\\IFilter -->
-<g id="node10" class="node"><title>\\Chadicus\\FileInfo\\IFilter</title>
-<polygon fill="none" stroke="black" points="130,-510 76,-510 76,-474 130,-474 130,-510"/>
-<text text-anchor="middle" x="103" y="-489.1" font-family="Times Roman,serif" font-size="11.00">IFilter</text>
-</g>
-<!-- \\Chadicus\\FileInfo\\NullFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter -->
-<g id="edge6" class="edge"><title>\\Chadicus\\FileInfo\\NullFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M296.715,-538.492C255.689,-528.645 183.808,-511.394 140.089,-500.901"/>
-<polygon fill="none" stroke="black" points="140.688,-497.446 130.147,-498.515 139.054,-504.253 140.688,-497.446"/>
-</g>
-<!-- \\Chadicus\\FileInfo\\FilterIterator -->
-<g id="node5" class="node"><title>\\Chadicus\\FileInfo\\FilterIterator</title>
-<polygon fill="none" stroke="black" points="369,-348 287,-348 287,-312 369,-312 369,-348"/>
-<text text-anchor="middle" x="328" y="-327.1" font-family="Times Roman,serif" font-size="11.00">FilterIterator</text>
-</g>
-<!-- \\FilterIterator -->
-<g id="node16" class="node"><title>\\FilterIterator</title>
-<ellipse fill="none" stroke="black" cx="103" cy="-126" rx="77.0746" ry="18.3848"/>
-<text text-anchor="middle" x="103" y="-122.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\FilterIterator</text>
-</g>
-<!-- \\Chadicus\\FileInfo\\FilterIterator&#45;&gt;\\FilterIterator -->
-<g id="edge8" class="edge"><title>\\Chadicus\\FileInfo\\FilterIterator&#45;&gt;\\FilterIterator</title>
-<path fill="none" stroke="black" d="M291.435,-311.907C286.779,-309.13 282.184,-306.136 278,-303 215.952,-256.503 154.913,-188.232 123.95,-151.553"/>
-<polygon fill="none" stroke="black" points="126.557,-149.215 117.453,-143.796 121.19,-153.709 126.557,-149.215"/>
-</g>
 <!-- \\Chadicus\\FileInfo\\Collection -->
-<g id="node6" class="node"><title>\\Chadicus\\FileInfo\\Collection</title>
+<g id="node4" class="node"><title>\\Chadicus\\FileInfo\\Collection</title>
 <polygon fill="none" stroke="black" points="362,-294 294,-294 294,-258 362,-258 362,-294"/>
 <text text-anchor="middle" x="328" y="-273.1" font-family="Times Roman,serif" font-size="11.00">Collection</text>
 </g>
 <!-- \\IteratorAggregate -->
-<g id="node18" class="node"><title>\\IteratorAggregate</title>
+<g id="node15" class="node"><title>\\IteratorAggregate</title>
 <ellipse fill="none" stroke="black" cx="103" cy="-72" rx="102.03" ry="18.3848"/>
 <text text-anchor="middle" x="103" y="-68.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\IteratorAggregate</text>
 </g>
 <!-- \\Chadicus\\FileInfo\\Collection&#45;&gt;\\IteratorAggregate -->
-<g id="edge10" class="edge"><title>\\Chadicus\\FileInfo\\Collection&#45;&gt;\\IteratorAggregate</title>
+<g id="edge6" class="edge"><title>\\Chadicus\\FileInfo\\Collection&#45;&gt;\\IteratorAggregate</title>
 <path fill="none" stroke="black" stroke-dasharray="1,5" d="M293.984,-259.257C288.199,-255.431 282.588,-250.995 278,-246 228.79,-192.42 262.299,-145.075 206,-99 200.762,-94.7129 194.914,-91.0998 188.74,-88.0556"/>
 <polygon fill="none" stroke="black" points="190.055,-84.8105 179.492,-83.9904 187.238,-91.2187 190.055,-84.8105"/>
 </g>
 <!-- \\Chadicus\\FileInfo\\IsDirectoryFilter -->
-<g id="node7" class="node"><title>\\Chadicus\\FileInfo\\IsDirectoryFilter</title>
-<polygon fill="none" stroke="black" points="378,-510 278,-510 278,-474 378,-474 378,-510"/>
-<text text-anchor="middle" x="328" y="-489.1" font-family="Times Roman,serif" font-size="11.00">IsDirectoryFilter</text>
+<g id="node5" class="node"><title>\\Chadicus\\FileInfo\\IsDirectoryFilter</title>
+<polygon fill="none" stroke="black" points="378,-564 278,-564 278,-528 378,-528 378,-564"/>
+<text text-anchor="middle" x="328" y="-543.1" font-family="Times Roman,serif" font-size="11.00">IsDirectoryFilter</text>
+</g>
+<!-- \\Chadicus\\FileInfo\\IFilter -->
+<g id="node11" class="node"><title>\\Chadicus\\FileInfo\\IFilter</title>
+<polygon fill="none" stroke="black" points="130,-510 76,-510 76,-474 130,-474 130,-510"/>
+<text text-anchor="middle" x="103" y="-489.1" font-family="Times Roman,serif" font-size="11.00">IFilter</text>
 </g>
 <!-- \\Chadicus\\FileInfo\\IsDirectoryFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter -->
-<g id="edge12" class="edge"><title>\\Chadicus\\FileInfo\\IsDirectoryFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M277.786,-492C236.114,-492 177.792,-492 140.203,-492"/>
-<polygon fill="none" stroke="black" points="140.182,-488.5 130.182,-492 140.182,-495.5 140.182,-488.5"/>
+<g id="edge8" class="edge"><title>\\Chadicus\\FileInfo\\IsDirectoryFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M277.786,-533.949C236.114,-523.947 177.792,-509.95 140.203,-500.929"/>
+<polygon fill="none" stroke="black" points="140.723,-497.454 130.182,-498.524 139.089,-504.261 140.723,-497.454"/>
+</g>
+<!-- \\Chadicus\\FileInfo\\ExtensionFilter -->
+<g id="node6" class="node"><title>\\Chadicus\\FileInfo\\ExtensionFilter</title>
+<polygon fill="none" stroke="black" points="376,-510 280,-510 280,-474 376,-474 376,-510"/>
+<text text-anchor="middle" x="328" y="-489.1" font-family="Times Roman,serif" font-size="11.00">ExtensionFilter</text>
+</g>
+<!-- \\Chadicus\\FileInfo\\ExtensionFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter -->
+<g id="edge14" class="edge"><title>\\Chadicus\\FileInfo\\ExtensionFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M279.455,-492C237.771,-492 178.546,-492 140.443,-492"/>
+<polygon fill="none" stroke="black" points="140.289,-488.5 130.289,-492 140.289,-495.5 140.289,-488.5"/>
 </g>
 <!-- \\Chadicus\\FileInfo\\NullComparer -->
-<g id="node8" class="node"><title>\\Chadicus\\FileInfo\\NullComparer</title>
+<g id="node7" class="node"><title>\\Chadicus\\FileInfo\\NullComparer</title>
 <polygon fill="none" stroke="black" points="373,-402 283,-402 283,-366 373,-366 373,-402"/>
 <text text-anchor="middle" x="328" y="-381.1" font-family="Times Roman,serif" font-size="11.00">NullComparer</text>
 </g>
 <!-- \\Chadicus\\FileInfo\\IComparer -->
-<g id="node11" class="node"><title>\\Chadicus\\FileInfo\\IComparer</title>
+<g id="node10" class="node"><title>\\Chadicus\\FileInfo\\IComparer</title>
 <polygon fill="none" stroke="black" points="139,-402 67,-402 67,-366 139,-366 139,-402"/>
 <text text-anchor="middle" x="103" y="-381.1" font-family="Times Roman,serif" font-size="11.00">IComparer</text>
 </g>
 <!-- \\Chadicus\\FileInfo\\NullComparer&#45;&gt;\\Chadicus\\FileInfo\\IComparer -->
-<g id="edge14" class="edge"><title>\\Chadicus\\FileInfo\\NullComparer&#45;&gt;\\Chadicus\\FileInfo\\IComparer</title>
+<g id="edge16" class="edge"><title>\\Chadicus\\FileInfo\\NullComparer&#45;&gt;\\Chadicus\\FileInfo\\IComparer</title>
 <path fill="none" stroke="black" stroke-dasharray="1,5" d="M282.468,-384C243.805,-384 188.55,-384 149.588,-384"/>
 <polygon fill="none" stroke="black" points="149.557,-380.5 139.557,-384 149.557,-387.5 149.557,-380.5"/>
 </g>
-<!-- \\Chadicus\\FileInfo\\ExtensionFilter -->
-<g id="node9" class="node"><title>\\Chadicus\\FileInfo\\ExtensionFilter</title>
-<polygon fill="none" stroke="black" points="376,-456 280,-456 280,-420 376,-420 376,-456"/>
-<text text-anchor="middle" x="328" y="-435.1" font-family="Times Roman,serif" font-size="11.00">ExtensionFilter</text>
+<!-- \\Chadicus\\FileInfo\\NullFilter -->
+<g id="node8" class="node"><title>\\Chadicus\\FileInfo\\NullFilter</title>
+<polygon fill="none" stroke="black" points="359,-456 297,-456 297,-420 359,-420 359,-456"/>
+<text text-anchor="middle" x="328" y="-435.1" font-family="Times Roman,serif" font-size="11.00">NullFilter</text>
 </g>
-<!-- \\Chadicus\\FileInfo\\ExtensionFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter -->
-<g id="edge16" class="edge"><title>\\Chadicus\\FileInfo\\ExtensionFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M279.455,-449.651C237.771,-459.655 178.546,-473.869 140.443,-483.014"/>
-<polygon fill="none" stroke="black" points="139.196,-479.714 130.289,-485.451 140.829,-486.52 139.196,-479.714"/>
+<!-- \\Chadicus\\FileInfo\\NullFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter -->
+<g id="edge18" class="edge"><title>\\Chadicus\\FileInfo\\NullFilter&#45;&gt;\\Chadicus\\FileInfo\\IFilter</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M296.715,-445.508C255.689,-455.355 183.808,-472.606 140.089,-483.099"/>
+<polygon fill="none" stroke="black" points="139.054,-479.747 130.147,-485.485 140.688,-486.554 139.054,-479.747"/>
+</g>
+<!-- \\Chadicus\\FileInfo\\FilterIterator -->
+<g id="node9" class="node"><title>\\Chadicus\\FileInfo\\FilterIterator</title>
+<polygon fill="none" stroke="black" points="369,-348 287,-348 287,-312 369,-312 369,-348"/>
+<text text-anchor="middle" x="328" y="-327.1" font-family="Times Roman,serif" font-size="11.00">FilterIterator</text>
+</g>
+<!-- \\FilterIterator -->
+<g id="node24" class="node"><title>\\FilterIterator</title>
+<ellipse fill="none" stroke="black" cx="103" cy="-126" rx="77.0746" ry="18.3848"/>
+<text text-anchor="middle" x="103" y="-122.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\FilterIterator</text>
+</g>
+<!-- \\Chadicus\\FileInfo\\FilterIterator&#45;&gt;\\FilterIterator -->
+<g id="edge20" class="edge"><title>\\Chadicus\\FileInfo\\FilterIterator&#45;&gt;\\FilterIterator</title>
+<path fill="none" stroke="black" d="M291.435,-311.907C286.779,-309.13 282.184,-306.136 278,-303 215.952,-256.503 154.913,-188.232 123.95,-151.553"/>
+<polygon fill="none" stroke="black" points="126.557,-149.215 117.453,-143.796 121.19,-153.709 126.557,-149.215"/>
 </g>
 <!-- \\Chadicus\\IO\\Directory -->
 <g id="node13" class="node"><title>\\Chadicus\\IO\\Directory</title>
@@ -139,17 +139,17 @@
 <text text-anchor="middle" x="328" y="-191.1" font-family="Times Roman,serif" font-size="11.00">Directory</text>
 </g>
 <!-- \\Chadicus\\IO\\Directory&#45;&gt;\\IteratorAggregate -->
-<g id="edge20" class="edge"><title>\\Chadicus\\IO\\Directory&#45;&gt;\\IteratorAggregate</title>
+<g id="edge12" class="edge"><title>\\Chadicus\\IO\\Directory&#45;&gt;\\IteratorAggregate</title>
 <path fill="none" stroke="black" stroke-dasharray="1,5" d="M309.797,-175.885C287.288,-154.477 246.913,-119.219 206,-99 197.907,-95.0003 189.153,-91.544 180.285,-88.5694"/>
 <polygon fill="none" stroke="black" points="181.233,-85.1986 170.643,-85.5277 179.127,-91.8743 181.233,-85.1986"/>
 </g>
 <!-- \\Directory -->
-<g id="node23" class="node"><title>\\Directory</title>
+<g id="node18" class="node"><title>\\Directory</title>
 <ellipse fill="none" stroke="black" cx="103" cy="-18" rx="60.1041" ry="18.3848"/>
 <text text-anchor="middle" x="103" y="-14.4" font-family="Times Roman,serif" font-size="14.00" fill="gray">\Directory</text>
 </g>
 <!-- \\Chadicus\\IO\\Directory&#45;&gt;\\Directory -->
-<g id="edge18" class="edge"><title>\\Chadicus\\IO\\Directory&#45;&gt;\\Directory</title>
+<g id="edge10" class="edge"><title>\\Chadicus\\IO\\Directory&#45;&gt;\\Directory</title>
 <path fill="none" stroke="black" d="M318.232,-175.737C300.334,-144.077 259.18,-79.127 206,-45 194.357,-37.5284 180.719,-32.1178 167.248,-28.2017"/>
 <polygon fill="none" stroke="black" points="168.063,-24.7968 157.499,-25.6062 166.262,-31.5612 168.063,-24.7968"/>
 </g>
