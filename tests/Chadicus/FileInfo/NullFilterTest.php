@@ -16,6 +16,7 @@ final class NullFilterTest extends \PHPUnit_Framework_TestCase
      */
     public function filter()
     {
-        $this->assertTrue((new NullFilter())->filter(new \SplTempFileObject()));
+        $filter = new NullFilter();
+        $this->assertTrue($filter->filter(new \SplTempFileObject()));
     }
 }
