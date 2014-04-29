@@ -18,7 +18,8 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      */
     public function filterFileExtensionMatch()
     {
-        $this->assertTrue((new ExtensionFilter('php'))->filter(new \SplFIleInfo(__FILE__)));
+        $filter = new ExtensionFilter('php');
+        $this->assertTrue($filter->filter(new \SplFIleInfo(__FILE__)));
     }
 
     /**
@@ -33,7 +34,8 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      */
     public function filterFileExtensionNotMatch()
     {
-        $this->assertFalse((new ExtensionFilter('txt'))->filter(new \SplFIleInfo(__FILE__)));
+        $filter = new ExtensionFilter('txt');
+        $this->assertFalse($filter->filter(new \SplFIleInfo(__FILE__)));
     }
 
     /**
@@ -48,6 +50,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      */
     public function filterDirectory()
     {
-        $this->assertFalse((new ExtensionFilter('php'))->filter(new \SplFIleInfo(__DIR__)));
+        $filter = new ExtensionFilter('php');
+        $this->assertFalse($filter->filter(new \SplFIleInfo(__DIR__)));
     }
 }
