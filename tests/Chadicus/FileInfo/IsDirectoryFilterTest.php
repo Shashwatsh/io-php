@@ -16,7 +16,8 @@ final class IsDirectoryFilterTest extends \PHPUnit_Framework_TestCase
      */
     public function filterIsDirectory()
     {
-        $this->assertTrue((new IsDirectoryFilter())->filter(new \SplFIleInfo(__DIR__)));
+        $filter = new IsDirectoryFilter();
+        $this->assertTrue($filter->filter(new \SplFIleInfo(__DIR__)));
     }
 
     /**
@@ -29,6 +30,7 @@ final class IsDirectoryFilterTest extends \PHPUnit_Framework_TestCase
      */
     public function filterIsNotDirectory()
     {
-        $this->assertFalse((new IsDirectoryFilter())->filter(new \SplFIleInfo(__FILE__)));
+        $filter = new IsDirectoryFilter();
+        $this->assertFalse($filter->filter(new \SplFIleInfo(__FILE__)));
     }
 }
