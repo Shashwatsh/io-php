@@ -2,12 +2,24 @@
 namespace Chadicus\IO;
 
 /**
+ * Unit tests for the \Chadicus\IO\Directory class.
+ *
  * @coversDefaultClass \Chadicus\IO\Directory
  */
 final class DirectoryTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * Temporary directory for tests.
+     *
+     * @var string
+     */
     private $tempDir;
 
+    /**
+     * Set up for each test.
+     *
+     * @return void
+     */
     protected function setUp()
     {
         $this->tempDir = sys_get_temp_dir() . '/directoryTests';
@@ -23,7 +35,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify basic behavior of __construct()
+     * Verify basic behavior of __construct().
      *
      * @test
      * @covers ::__construct
@@ -37,7 +49,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify basic behavior of getIterator()
+     * Verify basic behavior of getIterator().
      *
      * @test
      * @covers ::getIterator
@@ -64,7 +76,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verifies basic behavoir of listFiles()
+     * Verifies basic behavoir of listFiles().
      *
      * @test
      * @covers ::listFiles
@@ -137,9 +149,9 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Helper method to delete a directory and all of its contents
+     * Helper method to delete a directory and all of its contents.
      *
-     * @param string $directoryPath The directory to delete
+     * @param string $directoryPath The directory to delete.
      *
      * @return void
      */

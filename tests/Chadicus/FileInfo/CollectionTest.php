@@ -2,12 +2,24 @@
 namespace Chadicus\FileInfo;
 
 /**
+ * Unit tests for the \Chadicus\FileInfo\Collection class.
+ *
  * @coversDefaultClass \Chadicus\FileInfo\Collection
  */
 final class CollectionTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * Temporary file path for tests.
+     *
+     * @var string
+     */
     private $tempDir;
 
+    /**
+     * Set up each test.
+     *
+     * @return void
+     */
     protected function setUp()
     {
         $this->tempDir = sys_get_temp_dir() . '/fileInfoCollectionTests';
@@ -19,13 +31,15 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify basic behavior of Collection
+     * Verify basic behavior of Collection.
      *
      * @test
      * @covers ::__construct
      * @covers ::getIterator
      * @uses \Chadicus\FileInfo\FilterIterator
      * @uses \Chadicus\FileInfo\NullFilter
+     *
+     * @return void
      */
     public function basicUse()
     {
@@ -52,7 +66,7 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify collection with sorting
+     * Verify collection with sorting.
      *
      * @test
      * @covers ::sort
@@ -60,6 +74,8 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
      * @uses \Chadicus\FileInfo\Collection::__construct
      * @uses \Chadicus\FileInfo\FilterIterator
      * @uses \Chadicus\FileInfo\NullFilter
+     *
+     * @return void
      */
     public function sort()
     {
@@ -78,7 +94,7 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify filter can be changed after construction
+     * Verify filter can be changed after construction.
      *
      * @test
      * @covers ::filter
@@ -112,9 +128,9 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Helper method to delete a directory and all of its contents
+     * Helper method to delete a directory and all of its contents.
      *
-     * @param string $directoryPath The directory to delete
+     * @param string $directoryPath The directory to delete.
      *
      * @return void
      */

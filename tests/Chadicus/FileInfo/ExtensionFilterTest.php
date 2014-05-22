@@ -2,12 +2,14 @@
 namespace Chadicus\FileInfo;
 
 /**
+ * Unit tests for the \Chadicus\FileInfo\ExtensionFilter class.
+ *
  * @coversDefaultClass \Chadicus\FileInfo\ExtensionFilter
  */
 final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Verify basic behavior of filter()
+     * Verify basic behavior of filter().
      *
      * @test
      * @covers ::__construct
@@ -23,7 +25,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify basic behavior of filter()
+     * Verify basic behavior of filter().
      *
      * @test
      * @covers ::__construct
@@ -39,7 +41,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify basic behavior of filter()
+     * Verify basic behavior of filter().
      *
      * @test
      * @covers ::__construct

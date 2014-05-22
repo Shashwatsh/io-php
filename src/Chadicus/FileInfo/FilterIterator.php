@@ -1,20 +1,23 @@
 <?php
 namespace Chadicus\FileInfo;
 
+/**
+ * Implementation of the abstract \FilterIterator which uses an IFilter for filtering.
+ */
 final class FilterIterator extends \FilterIterator
 {
     /**
-     * The filterer
+     * The filterer.
      *
      * @var IFilter
      */
     private $filter;
 
     /**
-     * Construct a new instance of FilterIterator
+     * Construct a new instance of FilterIterator.
      *
-     * @param \Iterator The iterator that is being filtered.
-     * @param IFilter The filter
+     * @param \Iterator $iterator The iterator that is being filtered.
+     * @param IFilter   $filter   The filter.
      */
     public function __construct(\Iterator $iterator, IFilter $filter)
     {

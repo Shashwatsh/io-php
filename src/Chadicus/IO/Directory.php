@@ -2,7 +2,7 @@
 namespace Chadicus\IO;
 
 /**
- * Adds funcitionality to the \Directory class
+ * Adds funcitionality to the \Directory class.
  */
 class Directory extends \Directory implements \IteratorAggregate
 {
@@ -29,6 +29,10 @@ class Directory extends \Directory implements \IteratorAggregate
 
     /**
      * Returns an array containing all files that exist in this Directory.
+     *
+     * @param array   $includedExtensions List of file extensions to include.
+     * @param array   $excludedExtensions List of file extensions to exclude.
+     * @param integer $limit              The maximum limit of files to return.
      *
      * @return array
      */

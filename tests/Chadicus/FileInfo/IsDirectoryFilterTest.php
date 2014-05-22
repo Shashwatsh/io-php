@@ -2,12 +2,14 @@
 namespace Chadicus\FileInfo;
 
 /**
+ * Unit tests for the \Chadicus\FileInfo\IsDirectoryFilter.
+ *
  * @coversDefaultClass \Chadicus\FileInfo\IsDirectoryFilter
  */
 final class IsDirectoryFilterTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Verify basic behavior of filter()
+     * Verify basic behavior of filter().
      *
      * @test
      * @covers ::filter
@@ -21,7 +23,7 @@ final class IsDirectoryFilterTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Verify basic behavior of filter()
+     * Verify basic behavior of filter().
      *
      * @test
      * @covers ::filter

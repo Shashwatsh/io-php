@@ -1,34 +1,37 @@
 <?php
 namespace Chadicus\FileInfo;
 
+/**
+ * Class for sorting and filtering a directory path.
+ */
 class Collection implements \IteratorAggregate
 {
     /**
-     * Comparer for sorting the collection
+     * Comparer for sorting the collection.
      *
      * @var IComparer
      */
     private $comparer;
 
     /**
-     * Iterator for the collection
+     * Iterator for the collection.
      *
      * @var \Iterator
      */
     private $iterator;
 
     /**
-     * The file system path to iterate over
+     * The file system path to iterate over.
      *
      * @var string
      */
     private $path;
 
     /**
-     * Construct a new FileInfo collection
+     * Construct a new FileInfo collection.
      *
-     * @param string $path The path of the filesystem item to be iterated over.
-     * @param IFilter $filter Filter to apply to the path contents.
+     * @param string    $path     The path of the filesystem item to be iterated over.
+     * @param IFilter   $filter   Filter to apply to the path contents.
      * @param IComparer $comparer Comparer to apply to the path contents.
      */
     final public function __construct($path, IFilter $filter = null, IComparer $comparer = null)
@@ -45,11 +48,11 @@ class Collection implements \IteratorAggregate
     }
 
     /**
-     * Sets the sort for this collection
+     * Sets the sort for this collection.
      *
-     * @param IComparer $comparer
+     * @param IComparer $comparer The comparer to be used for sorting.
      *
-     * @return Collection
+     * @return Collection Returns $this for fluent interface.
      */
     final public function sort(IComparer $comparer)
     {
@@ -58,11 +61,11 @@ class Collection implements \IteratorAggregate
     }
 
     /**
-     * Sets the filter for this collection
+     * Sets the filter for this collection.
      *
-     * @param IFilter $filter
+     * @param IFilter $filter The filter to use for filtering.
      *
-     * @return Collection
+     * @return Collection Returns $this for fluent interface.
      */
     final public function filter(IFilter $filter)
     {
@@ -71,7 +74,7 @@ class Collection implements \IteratorAggregate
     }
 
     /**
-     * Returns the iterator for this collection
+     * Returns the iterator for this collection.
      *
      * @return \Iterator
      */

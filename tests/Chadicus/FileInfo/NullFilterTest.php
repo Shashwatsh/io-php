@@ -2,12 +2,14 @@
 namespace Chadicus\FileInfo;
 
 /**
+ * Unit tests for the \Chadicus\FileInfo\NullFilter class.
+ *
  * @coversDefaultClass \Chadicus\FileInfo\NullFilter
  */
 final class NullFilterTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Verify basic behavior of filter()
+     * Verify basic behavior of filter().
      *
      * @test
      * @covers ::filter

@@ -1,12 +1,15 @@
 <?php
 namespace Chadicus\FileInfo;
 
+/**
+ * Iterface for a filter object.
+ */
 interface IFilter
 {
     /**
-     * Returns true if the file should be included false otherwise
+     * Returns true if the file should be included false otherwise.
      *
-     * @param \SplFileInfo $file The file to be filtered
+     * @param \SplFileInfo $file The file to be filtered.
      *
      * @return boolean
      */

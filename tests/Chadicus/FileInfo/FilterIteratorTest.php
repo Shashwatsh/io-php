@@ -2,12 +2,14 @@
 namespace Chadicus\FileInfo;
 
 /**
+ * Unit tests for the \Chadicus\FileInfo\FilterIterator class.
+ *
  * @coversDefaultClass \Chadicus\FileInfo\FilterIterator
  */
 final class FilterIteratorTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Verify basic behavior of compare()
+     * Verify basic behavior of compare().
      *
      * @test
      * @covers ::__construct
