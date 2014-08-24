@@ -1,5 +1,5 @@
 # Chadicus\IO
-[![Build Status](https://travis-ci.org/chadicus/io-php.png)](https://travis-ci.org/chadicus/io-php)
+[![Build Status](http://img.shields.io/travis/chadicus/io-php.svg?style=flat)](https://travis-ci.org/chadicus/io-php)
 
 
 A collection of classes to work with file systems
