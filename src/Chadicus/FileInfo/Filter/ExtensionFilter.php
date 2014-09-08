@@ -1,10 +1,10 @@
 <?php
-namespace Chadicus\FileInfo;
+namespace Chadicus\FileInfo\Filter;
 
 /**
- * Implementation of IFilter that filters files by a given extension.
+ * Implementation of FilterInterface that filters files by a given extension.
  */
-final class ExtensionFilter implements IFilter
+final class ExtensionFilter implements FilterInterface
 {
     /**
      * The extension to filter by.

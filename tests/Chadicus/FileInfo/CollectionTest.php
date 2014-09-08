@@ -1,6 +1,9 @@
 <?php
 namespace Chadicus\FileInfo;
 
+use Chadicus\FileInfo\Filter\ExtensionFilter;
+use Chadicus\FileInfo\Comparer\ExtensionComparer;
+
 /**
  * Unit tests for the \Chadicus\FileInfo\Collection class.
  *
@@ -37,7 +40,7 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
      * @covers ::__construct
      * @covers ::getIterator
      * @uses \Chadicus\FileInfo\FilterIterator
-     * @uses \Chadicus\FileInfo\NullFilter
+     * @uses \Chadicus\FileInfo\Filter\NullFilter
      *
      * @return void
      */
@@ -69,24 +72,23 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
      * Verify collection with sorting.
      *
      * @test
-     * @covers ::sort
+     * @covers ::setComparer
      * @covers ::getIterator
      * @uses \Chadicus\FileInfo\Collection::__construct
      * @uses \Chadicus\FileInfo\FilterIterator
-     * @uses \Chadicus\FileInfo\NullFilter
+     * @uses \Chadicus\FileInfo\Filter\NullFilter
      *
      * @return void
      */
-    public function sort()
+    public function setComparer()
     {
         touch("{$this->tempDir}/file.txt");
         touch("{$this->tempDir}/file.csv");
         touch("{$this->tempDir}/file.html");
 
-
         $collection = new Collection($this->tempDir);
         $actual = array();
-        foreach ($collection->sort(new ExtensionComparer()) as $item) {
+        foreach ($collection->setComparer(new ExtensionComparer()) as $item) {
             $actual[] = $item->getFilename();
         }
 
@@ -97,15 +99,15 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
      * Verify filter can be changed after construction.
      *
      * @test
-     * @covers ::filter
+     * @covers ::setFilter
      * @uses \Chadicus\FileInfo\Collection::__construct
      * @uses \Chadicus\FileInfo\Collection::getIterator
      * @uses \Chadicus\FileInfo\FilterIterator
-     * @uses \Chadicus\FileInfo\ExtensionFilter
+     * @uses \Chadicus\FileInfo\Filter\ExtensionFilter
      *
      * @return void
      */
-    public function filter()
+    public function setFilter()
     {
         touch("{$this->tempDir}/file.txt");
         touch("{$this->tempDir}/file.csv");
@@ -120,7 +122,7 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
         $this->assertSame(array('file.csv'), $actual);
 
         $actual = array();
-        foreach ($collection->filter(new ExtensionFilter('html')) as $item) {
+        foreach ($collection->setFilter(new ExtensionFilter('html')) as $item) {
             $actual[] = $item->getFilename();
         }
 

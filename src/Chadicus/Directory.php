@@ -1,5 +1,5 @@
 <?php
-namespace Chadicus\IO;
+namespace Chadicus;
 
 /**
  * Adds funcitionality to the \Directory class.

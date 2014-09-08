@@ -1,6 +1,10 @@
 <?php
 namespace Chadicus\FileInfo;
 
+use Chadicus\FileInfo\Filter\FilterInterface;
+use Chadicus\FileInfo\Filter\NullFilter;
+use Chadicus\FileInfo\Comparer\ComparerInterface;
+
 /**
  * Class for sorting and filtering a directory path.
  */
@@ -9,7 +13,7 @@ class Collection implements \IteratorAggregate
     /**
      * Comparer for sorting the collection.
      *
-     * @var IComparer
+     * @var ComparerInterface
      */
     private $comparer;
 
@@ -30,11 +34,11 @@ class Collection implements \IteratorAggregate
     /**
      * Construct a new FileInfo collection.
      *
-     * @param string    $path     The path of the filesystem item to be iterated over.
-     * @param IFilter   $filter   Filter to apply to the path contents.
-     * @param IComparer $comparer Comparer to apply to the path contents.
+     * @param string            $path     The path of the filesystem item to be iterated over.
+     * @param FilterInterface   $filter   Filter to apply to the path contents.
+     * @param ComparerInterface $comparer Comparer to apply to the path contents.
      */
-    final public function __construct($path, IFilter $filter = null, IComparer $comparer = null)
+    final public function __construct($path, FilterInterface $filter = null, ComparerInterface $comparer = null)
     {
         $this->path = $path;
 
@@ -50,11 +54,11 @@ class Collection implements \IteratorAggregate
     /**
      * Sets the sort for this collection.
      *
-     * @param IComparer $comparer The comparer to be used for sorting.
+     * @param ComparerInterface $comparer The comparer to be used for sorting.
      *
      * @return Collection Returns $this for fluent interface.
      */
-    final public function sort(IComparer $comparer)
+    final public function setComparer(ComparerInterface $comparer)
     {
         $this->comparer = $comparer;
         return $this;
@@ -63,11 +67,11 @@ class Collection implements \IteratorAggregate
     /**
      * Sets the filter for this collection.
      *
-     * @param IFilter $filter The filter to use for filtering.
+     * @param FilterInterface $filter The filter to use for filtering.
      *
      * @return Collection Returns $this for fluent interface.
      */
-    final public function filter(IFilter $filter)
+    final public function setFilter(FilterInterface $filter)
     {
         $this->iterator = new FilterIterator(new \FileSystemIterator($this->path), $filter);
         return $this;

@@ -1,6 +1,8 @@
 <?php
 namespace Chadicus\FileInfo;
 
+use Chadicus\FileInfo\Filter\AlwaysFalseFilter;
+
 /**
  * Unit tests for the \Chadicus\FileInfo\FilterIterator class.
  *

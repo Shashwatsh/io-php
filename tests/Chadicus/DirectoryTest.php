@@ -1,10 +1,10 @@
 <?php
-namespace Chadicus\IO;
+namespace Chadicus;
 
 /**
- * Unit tests for the \Chadicus\IO\Directory class.
+ * Unit tests for the \Chadicus\Directory class.
  *
- * @coversDefaultClass \Chadicus\IO\Directory
+ * @coversDefaultClass \Chadicus\Directory
  */
 final class DirectoryTest extends \PHPUnit_Framework_TestCase
 {
@@ -53,7 +53,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      * @covers ::getIterator
-     * @uses \Chadicus\IO\Directory::__construct
+     * @uses \Chadicus\Directory::__construct
      *
      * @return void
      */
@@ -80,7 +80,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      * @covers ::listFiles
-     * @uses \Chadicus\IO\Directory::__construct
+     * @uses \Chadicus\Directory::__construct
      *
      * @return void
      */
@@ -99,7 +99,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      * @covers ::listFiles
-     * @uses \Chadicus\IO\Directory::__construct
+     * @uses \Chadicus\Directory::__construct
      *
      * @return void
      */
@@ -118,7 +118,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      * @covers ::listFiles
-     * @uses \Chadicus\IO\Directory::__construct
+     * @uses \Chadicus\Directory::__construct
      *
      * @return void
      */
@@ -137,7 +137,7 @@ final class DirectoryTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      * @covers ::listFiles
-     * @uses \Chadicus\IO\Directory::__construct
+     * @uses \Chadicus\Directory::__construct
      *
      * @return void
      */

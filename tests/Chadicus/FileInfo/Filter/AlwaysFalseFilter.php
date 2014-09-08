@@ -1,10 +1,10 @@
 <?php
-namespace Chadicus\FileInfo;
+namespace Chadicus\FileInfo\Filter;
 
 /**
  * Filter that always returns false.
  */
-final class AlwaysFalseFilter implements IFilter
+final class AlwaysFalseFilter implements FilterInterface
 {
     /**
      * Will always return false.

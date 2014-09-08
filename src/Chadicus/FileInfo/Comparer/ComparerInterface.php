@@ -1,10 +1,10 @@
 <?php
-namespace Chadicus\FileInfo;
+namespace Chadicus\FileInfo\Comparer;
 
 /**
  * Interface for a comparer object.
  */
-interface IComparer
+interface ComparerInterface
 {
     /**
      * Compares two \SplInfoObjects objects and returns a value indicating whether one is less than, equal to, or greater than the other.

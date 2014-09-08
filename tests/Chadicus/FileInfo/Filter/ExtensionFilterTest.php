@@ -1,10 +1,10 @@
 <?php
-namespace Chadicus\FileInfo;
+namespace Chadicus\FileInfo\Filter;
 
 /**
- * Unit tests for the \Chadicus\FileInfo\ExtensionFilter class.
+ * Unit tests for the \Chadicus\FileInfo\Filter\ExtensionFilter class.
  *
- * @coversDefaultClass \Chadicus\FileInfo\ExtensionFilter
+ * @coversDefaultClass \Chadicus\FileInfo\Filter\ExtensionFilter
  */
 final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,7 +14,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::__construct
      * @covers ::filter
-     * @uses \Chadicus\FileInfo\ExtensionFilter::__construct
+     * @uses \Chadicus\FileInfo\Filter\ExtensionFilter::__construct
      *
      * @return void
      */
@@ -30,7 +30,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::__construct
      * @covers ::filter
-     * @uses \Chadicus\FileInfo\ExtensionFilter::__construct
+     * @uses \Chadicus\FileInfo\Filter\ExtensionFilter::__construct
      *
      * @return void
      */
@@ -46,7 +46,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::__construct
      * @covers ::filter
-     * @uses \Chadicus\FileInfo\ExtensionFilter::__construct
+     * @uses \Chadicus\FileInfo\Filter\ExtensionFilter::__construct
      *
      * @return void
      */

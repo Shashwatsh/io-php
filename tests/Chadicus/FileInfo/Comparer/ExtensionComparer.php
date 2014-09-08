@@ -1,10 +1,10 @@
 <?php
-namespace Chadicus\FileInfo;
+namespace Chadicus\FileInfo\Comparer;
 
 /**
  * Comparer that compares file extensions.
  */
-final class ExtensionComparer implements IComparer
+final class ExtensionComparer implements ComparerInterface
 {
     /**
      * Compares two \SplInfoObjects objects and returns a value indicating whether one is less than, equal to, or greater than the other.

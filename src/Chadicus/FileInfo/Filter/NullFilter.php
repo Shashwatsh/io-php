@@ -1,10 +1,10 @@
 <?php
-namespace Chadicus\FileInfo;
+namespace Chadicus\FileInfo\Filter;
 
 /**
- * Implementation of IFilter which filters for directories.
+ * Implemtation of FilterInterface which performs no filtering.
  */
-final class IsDirectoryFilter implements IFilter
+final class NullFilter implements FilterInterface
 {
     /**
      * Returns true if the file should be included false otherwise.
@@ -15,6 +15,6 @@ final class IsDirectoryFilter implements IFilter
      */
     public function filter(\SplFileInfo $file)
     {
-        return $file->isDir();
+        return true;
     }
 }
