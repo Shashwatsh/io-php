@@ -1,12 +1,12 @@
 <?php
-namespace ChadicusTest\Filter;
+namespace ChadicusTest\IO\Filter;
 
-use Chadicus\Filter\FilterIterator;
+use Chadicus\IO\Filter\FilterIterator;
 
 /**
- * Unit tests for the \Chadicus\Filter\FilterIterator class.
+ * Unit tests for the \Chadicus\IO\Filter\FilterIterator class.
  *
- * @coversDefaultClass \Chadicus\Filter\FilterIterator
+ * @coversDefaultClass \Chadicus\IO\Filter\FilterIterator
  */
 final class FilterIteratorTest extends \PHPUnit_Framework_TestCase
 {
@@ -27,7 +27,7 @@ final class FilterIteratorTest extends \PHPUnit_Framework_TestCase
             new \SplTempFileObject(),
         ];
 
-        $mockFilter = $this->getMockBuilder('\\Chadicus\\Filter\\FilterInterface')->getMock();
+        $mockFilter = $this->getMockBuilder('\\Chadicus\\IO\\Filter\\FilterInterface')->getMock();
         $mockFilter->method('filter')->willReturn(false);
 
         $iterator = new FilterIterator(new \ArrayIterator($files), $mockFilter);

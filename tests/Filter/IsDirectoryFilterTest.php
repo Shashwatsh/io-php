@@ -1,12 +1,12 @@
 <?php
-namespace ChadicusTest\Filter;
+namespace ChadicusTest\IO\Filter;
 
-use Chadicus\Filter\IsDirectoryFilter;
+use Chadicus\IO\Filter\IsDirectoryFilter;
 
 /**
- * Unit tests for the \Chadicus\Filter\IsDirectoryFilter.
+ * Unit tests for the \Chadicus\IO\Filter\IsDirectoryFilter.
  *
- * @coversDefaultClass \Chadicus\Filter\IsDirectoryFilter
+ * @coversDefaultClass \Chadicus\IO\Filter\IsDirectoryFilter
  */
 final class IsDirectoryFilterTest extends \PHPUnit_Framework_TestCase
 {

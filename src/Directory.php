@@ -1,6 +1,6 @@
 <?php
 
-namespace Chadicus;
+namespace Chadicus\IO;
 
 class Directory extends \Directory implements DirectoryInterface
 {

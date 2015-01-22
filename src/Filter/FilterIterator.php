@@ -1,5 +1,5 @@
 <?php
-namespace Chadicus\Filter;
+namespace Chadicus\IO\Filter;
 
 use Iterator;
 

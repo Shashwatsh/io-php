@@ -1,12 +1,12 @@
 <?php
-namespace ChadicusTest\Filter;
+namespace ChadicusTest\IO\Filter;
 
-use Chadicus\Filter\ExtensionFilter;
+use Chadicus\IO\Filter\ExtensionFilter;
 
 /**
- * Unit tests for the \Chadicus\Filter\ExtensionFilter class.
+ * Unit tests for the \Chadicus\IO\Filter\ExtensionFilter class.
  *
- * @coversDefaultClass \Chadicus\Filter\ExtensionFilter
+ * @coversDefaultClass \Chadicus\IO\Filter\ExtensionFilter
  */
 final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
 {
@@ -16,7 +16,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::__construct
      * @covers ::filter
-     * @uses \Chadicus\Filter\ExtensionFilter::__construct
+     * @uses \Chadicus\IO\Filter\ExtensionFilter::__construct
      *
      * @return void
      */
@@ -32,7 +32,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::__construct
      * @covers ::filter
-     * @uses \Chadicus\Filter\ExtensionFilter::__construct
+     * @uses \Chadicus\IO\Filter\ExtensionFilter::__construct
      *
      * @return void
      */
@@ -48,7 +48,7 @@ final class ExtensionFilterTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::__construct
      * @covers ::filter
-     * @uses \Chadicus\Filter\ExtensionFilter::__construct
+     * @uses \Chadicus\IO\Filter\ExtensionFilter::__construct
      *
      * @return void
      */

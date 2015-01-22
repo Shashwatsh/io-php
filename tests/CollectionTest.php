@@ -1,14 +1,14 @@
 <?php
 namespace ChadicusTest;
 
-use Chadicus\Collection;
-use Chadicus\Filter\ExtensionFilter;
-use Chadicus\Comparer\ExtensionComparer;
+use Chadicus\IO\Collection;
+use Chadicus\IO\Filter\ExtensionFilter;
+use Chadicus\IO\Comparer\ExtensionComparer;
 
 /**
- * Unit tests for the \Chadicus\Collection class.
+ * Unit tests for the \Chadicus\IO\Collection class.
  *
- * @coversDefaultClass \Chadicus\Collection
+ * @coversDefaultClass \Chadicus\IO\Collection
  */
 final class CollectionTest extends \PHPUnit_Framework_TestCase
 {
@@ -40,8 +40,8 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::__construct
      * @covers ::getIterator
-     * @uses \Chadicus\Filter\FilterIterator
-     * @uses \Chadicus\Filter\NullFilter
+     * @uses \Chadicus\IO\Filter\FilterIterator
+     * @uses \Chadicus\IO\Filter\NullFilter
      *
      * @return void
      */
@@ -75,10 +75,10 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
      * @test
      * @covers ::setComparer
      * @covers ::getIterator
-     * @uses \Chadicus\Collection::__construct
-     * @uses \Chadicus\Comparer\ExtensionComparer
-     * @uses \Chadicus\Filter\FilterIterator
-     * @uses \Chadicus\Filter\NullFilter
+     * @uses \Chadicus\IO\Collection::__construct
+     * @uses \Chadicus\IO\Comparer\ExtensionComparer
+     * @uses \Chadicus\IO\Filter\FilterIterator
+     * @uses \Chadicus\IO\Filter\NullFilter
      *
      * @return void
      */
@@ -102,10 +102,10 @@ final class CollectionTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      * @covers ::setFilter
-     * @uses \Chadicus\Collection::__construct
-     * @uses \Chadicus\Collection::getIterator
-     * @uses \Chadicus\Filter\FilterIterator
-     * @uses \Chadicus\Filter\ExtensionFilter
+     * @uses \Chadicus\IO\Collection::__construct
+     * @uses \Chadicus\IO\Collection::getIterator
+     * @uses \Chadicus\IO\Filter\FilterIterator
+     * @uses \Chadicus\IO\Filter\ExtensionFilter
      *
      * @return void
      */

@@ -1,5 +1,5 @@
 <?php
-namespace Chadicus\Comparer;
+namespace Chadicus\IO\Comparer;
 
 use SplFileInfo;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Chadicus;
+namespace Chadicus\IO;
 
 use IteratorAggregate;
 use FileSystemIterator;

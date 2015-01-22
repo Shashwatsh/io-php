@@ -1,12 +1,12 @@
 <?php
-namespace ChadicusTest\Filter;
+namespace ChadicusTest\IO\Filter;
 
-use Chadicus\Filter\NullFilter;
+use Chadicus\IO\Filter\NullFilter;
 
 /**
- * Unit tests for the \Chadicus\Filter\NullFilter class.
+ * Unit tests for the \Chadicus\IO\Filter\NullFilter class.
  *
- * @coversDefaultClass \Chadicus\Filter\NullFilter
+ * @coversDefaultClass \Chadicus\IO\Filter\NullFilter
  */
 final class NullFilterTest extends \PHPUnit_Framework_TestCase
 {
