@@ -1,12 +1,18 @@
 # Chadicus\IO
 [![Build Status](http://img.shields.io/travis/chadicus/io-php.svg?style=flat)](https://travis-ci.org/chadicus/io-php)
+[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/chadicus/io-php.svg?style=flat)](https://scrutinizer-ci.com/g/chadicus/io-php/)
+[![Code Coverage](http://img.shields.io/coveralls/chadicus/io-php.svg?style=flat)](https://coveralls.io/r/chadicus/io-php)
+[![Latest Stable Version](http://img.shields.io/packagist/v/chadicus/io.svg?style=flat)](https://packagist.org/packages/chadicus/io)
+[![Total Downloads](http://img.shields.io/packagist/dt/chadicus/io.svg?style=flat)](https://packagist.org/packages/chadicus/io)
+[![License](http://img.shields.io/packagist/l/chadicus/io.svg?style=flat)](https://packagist.org/packages/chadicus/io)
 
 
-A collection of classes to work with file systems
+
+A collection of various PHP classes for use with file systems
 
 ## Requirements
 
-Chadicus\IO requires PHP 5.3 (or later).
+Chadicus\IO requires PHP 5.4 (or later).
 
 ##Composer
 To add the library as a local, per-project dependency use [Composer](http://getcomposer.org)! Simply add a dependency on
@@ -15,13 +21,10 @@ To add the library as a local, per-project dependency use [Composer](http://getc
 ```json
 {
     "require": {
-        "chadicus/io": "~1.0"
+        "chadicus/io": "dev-master"
     }
 }
 ```
-##Documentation
-PHP docs for the project can be found [here](http://chadicus.github.io/io-php).
-
 ##Contact
 Developers may be contacted at:
 
