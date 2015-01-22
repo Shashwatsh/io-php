@@ -1,5 +1,7 @@
 <?php
-namespace Chadicus\FileInfo\Filter;
+namespace Chadicus\Filter;
+
+use SplFileInfo;
 
 /**
  * Implementation of FilterInterface that filters files by a given extension.
@@ -26,11 +28,11 @@ final class ExtensionFilter implements FilterInterface
     /**
      * Returns true if the file should be included false otherwise.
      *
-     * @param \SplFileInfo $file The file to be filtered.
+     * @param SplFileInfo $file The file to be filtered.
      *
      * @return boolean
      */
-    public function filter(\SplFileInfo $file)
+    public function filter(SplFileInfo $file)
     {
         return $file->getExtension() === $this->extension;
     }

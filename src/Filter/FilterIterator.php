@@ -1,7 +1,7 @@
 <?php
-namespace Chadicus\FileInfo;
+namespace Chadicus\Filter;
 
-use Chadicus\FileInfo\Filter\FilterInterface;
+use Iterator;
 
 /**
  * Implementation of the abstract \FilterIterator which uses an FilterInterface for filtering.
@@ -18,10 +18,10 @@ final class FilterIterator extends \FilterIterator
     /**
      * Construct a new instance of FilterIterator.
      *
-     * @param \Iterator       $iterator The iterator that is being filtered.
+     * @param Iterator        $iterator The iterator that is being filtered.
      * @param FilterInterface $filter   The filter.
      */
-    public function __construct(\Iterator $iterator, FilterInterface $filter)
+    public function __construct(Iterator $iterator, FilterInterface $filter)
     {
         $this->filter = $filter;
         parent::__construct($iterator);
