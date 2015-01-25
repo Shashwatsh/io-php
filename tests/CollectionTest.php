@@ -1,5 +1,5 @@
 <?php
-namespace ChadicusTest;
+namespace ChadicusTest\IO;
 
 use Chadicus\IO\Collection;
 use Chadicus\IO\Filter\ExtensionFilter;
